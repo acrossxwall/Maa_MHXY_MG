@@ -448,6 +448,7 @@
             95
         ],
         "action": "Click",
+        "post_delay": 1000,
         "post_wait_freezes": 10
     },
     "点击副本-开始战斗": {
@@ -472,10 +473,10 @@
             "请选择要做的事"
         ],
         "roi": [
-            925,
-            361,
-            223,
-            51
+            730,
+            351,
+            522,
+            66
         ],
         "pre_wait_freezes": 1,
         "action": "Click",
@@ -746,7 +747,73 @@
         "post_delay": 2000,
         "next": [
             "日常抓鬼-钟馗-捉鬼任务-开始"
+        ],
+        "interrupt": [
+            "抓鬼不足五人-图片识别"
         ]
+    },
+    "抓鬼不足五人-图片识别": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zhuagui/buzu5ren.png"
+        ],
+        "roi": [
+            384,
+            224,
+            502,
+            280
+        ],
+        "next": [
+            "抓鬼不足五人-点击取消"
+        ]
+    },
+    "抓鬼不足五人-点击取消": {
+        "recognition": "OCR",
+        "expected": [
+            "取消"
+        ],
+        "roi": "抓鬼不足五人-图片识别",
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1500,
+        "next": [
+            "抓鬼不足五人-点击钟馗"
+        ]
+    },
+    "抓鬼不足五人-点击钟馗": {
+        "recognition": "OCR",
+        "expected": [
+            "钟馗",
+            "钟道",
+            "钟",
+            "道"
+        ],
+        "roi": [
+            186,
+            157,
+            853,
+            426
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1500,
+        "next": [
+            "抓鬼不足五人-捉鬼任务"
+        ]
+    },
+    "抓鬼不足五人-捉鬼任务": {
+        "recognition": "OCR",
+        "expected": [
+            "捉鬼任务"
+        ],
+        "roi": [
+            925,
+            73,
+            312,
+            482
+        ],
+        "action": "Click",
+        "post_delay": 2000
     },
     "日常抓鬼-钟馗-捉鬼任务-开始": {
         "recognition": "OCR",
@@ -765,7 +832,8 @@
         "action": "Click",
         "post_delay": 200,
         "next": [
-            "日常抓鬼-第一轮结束-图片识别"
+            "日常抓鬼-第一轮结束-图片识别",
+            "日常抓鬼-第一轮结束-文字识别"
         ],
         "interrupt": [
             "自动寻路中-图片识别",
