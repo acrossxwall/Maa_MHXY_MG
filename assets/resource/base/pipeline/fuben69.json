@@ -430,9 +430,14 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
+        "post_delay": 1500,
         "next": [
             "打开小地图_百晓仙子-50普通-1"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "点击副本-跳过剧情动画": {
@@ -488,6 +493,16 @@
         ]
     },
     "打开小地图_百晓仙子-50普通-1": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [
@@ -567,12 +582,27 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
+        "post_delay": 1500,
         "next": [
             "打开小地图_百晓仙子-50普通-2"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "打开小地图_百晓仙子-50普通-2": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [
@@ -662,9 +692,14 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
+        "post_delay": 1500,
         "next": [
             "退出队伍"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "退出队伍": {
@@ -699,6 +734,16 @@
         ]
     },
     "日常抓鬼-第一轮": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [

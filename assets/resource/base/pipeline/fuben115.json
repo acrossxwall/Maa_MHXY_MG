@@ -122,7 +122,7 @@
             52
         ],
         "action": "Click",
-        "post_delay": 5000,
+        "post_delay": 4000,
         "next": [
             "115返回长安城"
         ],
@@ -240,6 +240,7 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500,
         "next": [
@@ -357,13 +358,27 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500,
         "next": [
             "115打开小地图-百晓仙子-50普通-1"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "115打开小地图-百晓仙子-50普通-1": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [
@@ -444,13 +459,27 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500,
         "next": [
             "115打开小地图_百晓仙子-50普通-2"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "115打开小地图_百晓仙子-50普通-2": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [
@@ -530,13 +559,27 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500,
         "next": [
             "115打开小地图_百晓仙子-70普通-3"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     },
     "115打开小地图_百晓仙子-70普通-3": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
+        ],
         "pre_delay": 1000,
         "action": "Key",
         "key": [
@@ -616,10 +659,14 @@
             149,
             56
         ],
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500,
         "next": [
             "日常抓鬼-第一轮"
+        ],
+        "interrupt": [
+            "打开大地图_69副本"
         ]
     }
 }
