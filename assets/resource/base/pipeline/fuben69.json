@@ -603,12 +603,12 @@
             117,
             31
         ],
-        "pre_delay": 1000,
+        "pre_delay": 1500,
         "action": "Key",
         "key": [
             61
         ],
-        "post_delay": 1000,
+        "post_delay": 1500,
         "next": [
             "点击地图-百晓仙子-50普通-2"
         ],
