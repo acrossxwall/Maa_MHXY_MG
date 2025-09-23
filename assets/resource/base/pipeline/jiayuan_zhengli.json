@@ -186,199 +186,6 @@
         "action": "Click",
         "post_delay": 3000,
         "next": [
-            "点击卧室家具",
-            "卧室家具-未开启"
-        ]
-    },
-    "卧室家具-未开启": {
-        "recognition": "TemplateMatch",
-        "template": "jiayuan/weikaiqi.png",
-        "roi": [
-            477,
-            552,
-            154,
-            56
-        ],
-        "action": "Key",
-        "key": [
-            111
-        ],
-        "next": [
-            "召唤灵室-点击打理"
-        ]
-    },
-    "点击卧室家具": {
-        "recognition": "TemplateMatch",
-        "template": "jiayuan/shiyongjiaju.png",
-        "roi": [
-            477,
-            552,
-            154,
-            56
-        ],
-        "action": "Click",
-        "post_delay": 7000,
-        "next": [
-            "进入卧室休息界面",
-            "休息失败-进入召唤灵室"
-        ]
-    },
-    "休息失败-进入召唤灵室": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": [
-            "卧室休息"
-        ],
-        "roi": [
-            540,
-            18,
-            254,
-            60
-        ],
-        "next": [
-            "召唤灵室-点击打理"
-        ]
-    },
-    "进入卧室休息界面": {
-        "recognition": "OCR",
-        "expected": [
-            "卧室休息"
-        ],
-        "roi": [
-            540,
-            18,
-            254,
-            60
-        ],
-        "next": [
-            "休息已完成-回到主界面"
-        ],
-        "interrupt": [
-            "卧室-点击休息-颜色匹配"
-        ]
-    },
-    "卧室-点击休息-颜色匹配": {
-        "recognition": "ColorMatch",
-        "upper": [
-            243,
-            202,
-            105
-        ],
-        "lower": [
-            234,
-            183,
-            91
-        ],
-        "roi": [
-            569,
-            628,
-            55,
-            49
-        ],
-        "method": 4,
-        "count": 950,
-        "action": "Click",
-        "next": [
-            "休息满活力确认",
-            "休息不需要确认"
-        ]
-    },
-    "休息满活力确认": {
-        "recognition": "OCR",
-        "expected": [
-            "确认"
-        ],
-        "roi": [
-            664,
-            375,
-            164,
-            81
-        ],
-        "action": "Click"
-    },
-    "休息不需要确认": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": [
-            "确认"
-        ],
-        "roi": [
-            664,
-            375,
-            164,
-            81
-        ]
-    },
-    "休息已完成-回到主界面": {
-        "recognition": "ColorMatch",
-        "upper": [
-            178,
-            175,
-            168
-        ],
-        "lower": [
-            168,
-            164,
-            158
-        ],
-        "roi": [
-            578,
-            636,
-            49,
-            40
-        ],
-        "method": 4,
-        "count": 950,
-        "action": "Key",
-        "key": [
-            111
-        ],
-        "next": [
-            "召唤灵室-点击打理"
-        ]
-    },
-    "召唤灵室-点击打理": {
-        "recognition": "TemplateMatch",
-        "template": "jiayuan/dali.png",
-        "roi": [
-            1036,
-            622,
-            93,
-            80
-        ],
-        "action": "Click",
-        "pre_delay": 500,
-        "next": [
-            "召唤灵室-点击佣人"
-        ]
-    },
-    "召唤灵室-点击佣人": {
-        "recognition": "TemplateMatch",
-        "template": "jiayuan/yongrenguanli.png",
-        "roi": [
-            1032,
-            473,
-            51,
-            138
-        ],
-        "action": "Click",
-        "post_delay": 500,
-        "next": [
-            "召唤灵室-点击管家"
-        ]
-    },
-    "召唤灵室-点击管家": {
-        "recognition": "TemplateMatch",
-        "template": "jiayuan/xunlu.png",
-        "roi": [
-            700,
-            202,
-            40,
-            53
-        ],
-        "action": "Click",
-        "post_delay": 3000,
-        "next": [
             "召唤灵室-使用家具",
             "召唤灵室-未开启"
         ]
@@ -393,6 +200,9 @@
             79
         ],
         "next": [
+            "卧室-点击打理"
+        ],
+        "interrupt": [
             "panduan_zhujiemian"
         ]
     },
@@ -524,6 +334,182 @@
         ],
         "action": "Click",
         "post_delay": 1500,
+        "next": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "卧室-点击打理": {
+        "recognition": "TemplateMatch",
+        "template": "jiayuan/dali.png",
+        "roi": [
+            1036,
+            622,
+            93,
+            80
+        ],
+        "action": "Click",
+        "pre_delay": 500,
+        "next": [
+            "卧室-点击佣人"
+        ],
+        "interrupt": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "卧室-点击佣人": {
+        "recognition": "TemplateMatch",
+        "template": "jiayuan/yongrenguanli.png",
+        "roi": [
+            1032,
+            473,
+            51,
+            138
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "next": [
+            "卧室-点击管家"
+        ]
+    },
+    "卧室-点击管家": {
+        "recognition": "TemplateMatch",
+        "template": "jiayuan/xunlu.png",
+        "roi": [
+            700,
+            202,
+            40,
+            53
+        ],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "点击卧室家具",
+            "卧室家具-未开启"
+        ]
+    },
+    "卧室家具-未开启": {
+        "recognition": "TemplateMatch",
+        "template": "jiayuan/weikaiqi.png",
+        "roi": [
+            477,
+            552,
+            154,
+            56
+        ],
+        "action": "Key",
+        "key": [
+            111
+        ],
+        "next": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "点击卧室家具": {
+        "recognition": "TemplateMatch",
+        "template": "jiayuan/shiyongjiaju.png",
+        "roi": [
+            477,
+            552,
+            154,
+            56
+        ],
+        "action": "Click",
+        "post_delay": 7000,
+        "next": [
+            "进入卧室休息界面",
+            "休息失败"
+        ]
+    },
+    "休息失败": {
+        "inverse": true,
+        "recognition": "OCR",
+        "expected": [
+            "卧室休息"
+        ],
+        "roi": [
+            540,
+            18,
+            254,
+            60
+        ]
+    },
+    "进入卧室休息界面": {
+        "recognition": "OCR",
+        "expected": [
+            "卧室休息"
+        ],
+        "roi": [
+            540,
+            18,
+            254,
+            60
+        ],
+        "next": [
+            "卧室休息-agent"
+        ]
+    },
+    "卧室休息-agent": {
+        "action": "Custom",
+        "custom_action": "count",
+        "custom_action_param": {
+            "count": 0,
+            "target_count": 4,
+            "nextTask": "休息已完成-回到主界面",
+            "LoopNode": "卧室-点击休息"
+        }
+    },
+    "卧室-点击休息": {
+        "recognition": "OCR",
+        "expected": "休息",
+        "roi": [
+            555,
+            619,
+            218,
+            70
+        ],
+        "action": "Click",
+        "next": [
+            "休息满活力确认",
+            "休息不需要确认"
+        ]
+    },
+    "休息满活力确认": {
+        "recognition": "OCR",
+        "expected": [
+            "确认"
+        ],
+        "roi": [
+            664,
+            375,
+            164,
+            81
+        ],
+        "action": "Click"
+    },
+    "休息不需要确认": {
+        "inverse": true,
+        "recognition": "OCR",
+        "expected": [
+            "确认"
+        ],
+        "roi": [
+            664,
+            375,
+            164,
+            81
+        ]
+    },
+    "休息已完成-回到主界面": {
+        "recognition": "OCR",
+        "expected": [
+            "卧室休息"
+        ],
+        "roi": [
+            540,
+            18,
+            254,
+            60
+        ],
         "next": [
             "panduan_zhujiemian"
         ]

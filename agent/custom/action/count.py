@@ -40,7 +40,7 @@ class count(CustomAction):
         next_task = argv_dict.get("nextTask", "")
         loop_node = argv_dict.get("LoopNode", "")
         #当前次数小于目标次数时，增加计数并执行的任务
-        while count <= target_count:
+        while count < target_count:
             count = argv_dict.get("count", 0)
             logger.info(f"当前计数: {count}, 目标计数: {target_count}")
             # 计数未达标时：递增计数并执行备用节点

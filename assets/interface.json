@@ -104,11 +104,16 @@
             "doc": "全自动：只需用户组队后，开始运行任务。手动：需要手动接取双侠士后，返回长安城，在开始运行任务。"
         },
         {
-            "name": "捉鬼任务-无限(已完成)",
+            "name": "捉鬼任务-无限/手动选择执行几轮(已完成)",
             "entry": "zhuoguirenwu",
             "option": [
-                "抓鬼-队长-是否创建组队"
-            ]
+                "抓鬼-队长-是否创建组队",
+                "抓鬼进入轮次选择"
+            ],
+            "advanced": [
+                "抓鬼轮次选择"
+            ],
+            "doc": "如果在（抓鬼进入轮次选择）中选择进入轮次选择，请在（抓鬼轮次选择）中输入需要执行的轮次，默认2轮"
         },
         {
             "name": "退出队伍(已完成)",
@@ -178,6 +183,26 @@
                     "name": "创建队伍",
                     "pipeline_override": {
                         "识别位置-长安城-抓鬼": {}
+                    }
+                }
+            ]
+        },
+        "抓鬼进入轮次选择": {
+            "cases": [
+                {
+                    "name": "不进入轮次选择",
+                    "pipeline_override": {
+                        "抓鬼一轮完成": {}
+                    }
+                },
+                {
+                    "name": "进入轮次选择",
+                    "pipeline_override": {
+                        "抓鬼一轮完成": {
+                            "next": [
+                                "抓鬼轮次计算-agent"
+                            ]
+                        }
                     }
                 }
             ]
@@ -279,6 +304,16 @@
             "pipeline_override": {
                 "shuru": {
                     "input_text": "{text}"
+                }
+            }
+        },
+        "抓鬼轮次选择": {
+            "field": "number",
+            "type": "int",
+            "default": 2,
+            "pipeline_override": {
+                "custom_action_param": {
+                    "target_count": "{number}"
                 }
             }
         }
