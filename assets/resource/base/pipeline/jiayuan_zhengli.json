@@ -335,6 +335,9 @@
         "action": "Click",
         "post_delay": 1500,
         "next": [
+            "卧室-点击打理"
+        ],
+        "interrupt": [
             "panduan_zhujiemian"
         ]
     },
