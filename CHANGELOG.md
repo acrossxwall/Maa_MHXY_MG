@@ -2,6 +2,13 @@
 
 项目更新记录
 
+## [1.4.3] - 2025-09-28
+
+### 修复|Fixed
+ - 修复家园任务
+
+[已有 Mirror酱 CDK？点击前往高速下载](https://mirrorchyan.com/zh/projects?rid=Maa_MHXY_MG)
+
 ## [1.4.3] - 2025-09-25
 
 ### 修复|Fixed
