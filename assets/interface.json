@@ -10,6 +10,13 @@
             "type": "Adb"
         }
     ],
+    "agent": {
+        "child_exec": "python",
+        "child_args": [
+            "{PROJECT_DIR}/../agent/main.py",
+            "-u"
+        ]
+    },
     "resource": [
         {
             "name": "官方混服",
