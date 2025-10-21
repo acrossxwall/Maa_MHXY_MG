@@ -356,7 +356,7 @@
             154,
             56
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             111
         ],

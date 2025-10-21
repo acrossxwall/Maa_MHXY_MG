@@ -44,7 +44,7 @@
     },
     "dakai_map_baotu": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -67,7 +67,7 @@
             83,
             79
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -87,7 +87,7 @@
     },
     "to_changancheng_dianxiaoer": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": 61,
         "post_delay": 1500,
         "next": [
@@ -107,7 +107,7 @@
             80,
             75
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": 61,
         "post_delay": 1500
     },
@@ -193,7 +193,7 @@
     },
     "open_huodong_bt": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             31
@@ -282,7 +282,7 @@
             600,
             62
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             31

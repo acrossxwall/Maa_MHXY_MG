@@ -20,7 +20,7 @@
             57
         ],
         "pre_delay": 200,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             29
@@ -48,7 +48,7 @@
             57
         ],
         "pre_delay": 200,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             29

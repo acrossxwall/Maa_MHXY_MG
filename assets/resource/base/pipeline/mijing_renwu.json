@@ -44,7 +44,7 @@
     },
     "dakai_map": {
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -68,7 +68,7 @@
             83,
             79
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -88,7 +88,7 @@
     },
     "click_tab_mijing": {
         "pre_delay": 1500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -111,7 +111,7 @@
             60,
             64
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -324,7 +324,7 @@
         ]
     },
     "tuichu_shibeijiemian": {
-        "action": "Key",
+        "action": "ClickKey",
         "key": 111
     },
     "issub_sleep_mijing": {

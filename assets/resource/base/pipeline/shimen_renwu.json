@@ -95,7 +95,7 @@
             260
         ],
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": 111
     },
     "师门完成-九幽遮挡": {

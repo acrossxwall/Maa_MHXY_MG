@@ -55,12 +55,12 @@
     },
     "returnmain": {
         "pre_delay": 500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": 111
     },
     "returnmain1": {
         "pre_delay": 500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             111,
             111
@@ -104,7 +104,7 @@
         ],
         "inverse": true,
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "post_wait_freezes": 100,
         "key": 111,
         "post_delay": 200

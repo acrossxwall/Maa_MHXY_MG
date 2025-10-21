@@ -232,7 +232,7 @@
         ]
     },
     "dakaibeibao": {
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             33

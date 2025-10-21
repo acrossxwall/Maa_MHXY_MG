@@ -45,7 +45,7 @@
     },
     "打开大地图_69副本": {
         "pre_delay": 500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -68,7 +68,7 @@
             83,
             79
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -88,7 +88,7 @@
     },
     "打开组队-副本": {
         "pre_wait_freezes": 100,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -121,7 +121,7 @@
     },
     "关闭组队页面": {
         "pre_delay": 500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -170,7 +170,7 @@
             67
         ],
         "pre_delay": 2000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -308,7 +308,7 @@
     },
     "打开小地图_百晓仙子": {
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -330,7 +330,7 @@
             80,
             75
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": 61,
         "post_delay": 1000
     },
@@ -524,7 +524,7 @@
             31
         ],
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -625,7 +625,7 @@
             31
         ],
         "pre_delay": 1500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -727,7 +727,7 @@
     },
     "退出队伍": {
         "pre_wait_freezes": 10,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -768,7 +768,7 @@
             31
         ],
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],

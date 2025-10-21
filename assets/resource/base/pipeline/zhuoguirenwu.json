@@ -44,7 +44,7 @@
     },
     "打开大地图_捉鬼": {
         "pre_delay": 500,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -70,7 +70,7 @@
     },
     "打开组队-捉鬼": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -98,7 +98,7 @@
             61
         ],
         "pre_delay": 2000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -125,7 +125,7 @@
             73
         ],
         "pre_delay": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -142,7 +142,7 @@
             67
         ],
         "pre_delay": 2000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             48
@@ -302,7 +302,7 @@
     },
     "打开小地图-钟馗": {
         "pre_delay": 200,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],
@@ -325,7 +325,7 @@
             75
         ],
         "pre_delay": 200,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             61
         ],

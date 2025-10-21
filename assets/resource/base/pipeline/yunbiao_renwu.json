@@ -44,7 +44,7 @@
     },
     "打开大地图_运镖": {
         "pre_wait_freezes": 100,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -67,7 +67,7 @@
             83,
             79
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             41
@@ -87,7 +87,7 @@
     },
     "打开小地图_郑镖头": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": 61,
         "post_delay": 1000,
         "next": [
@@ -107,7 +107,7 @@
             80,
             75
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": 61,
         "post_delay": 1000
     },
@@ -171,7 +171,7 @@
             466,
             195
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "post_delay": 1000,
         "key": 111
     },
@@ -212,7 +212,7 @@
     },
     "在活动中查看运镖任务是否完成": {
         "pre_wait_freezes": 1000,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             31
@@ -251,7 +251,7 @@
             600,
             62
         ],
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             31

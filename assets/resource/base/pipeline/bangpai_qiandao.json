@@ -15,7 +15,7 @@
     },
     "baipai": {
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             30
@@ -39,7 +39,7 @@
             80
         ],
         "pre_wait_freezes": 1,
-        "action": "Key",
+        "action": "ClickKey",
         "key": [
             57,
             30
