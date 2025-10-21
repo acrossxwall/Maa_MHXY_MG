@@ -817,7 +817,8 @@
             "日常抓鬼-钟馗-捉鬼任务-开始"
         ],
         "interrupt": [
-            "抓鬼不足五人-图片识别"
+            "抓鬼不足五人-图片识别",
+            "抓鬼领取双倍弹窗"
         ]
     },
     "抓鬼不足五人-图片识别": {
@@ -882,6 +883,32 @@
         ],
         "action": "Click",
         "post_delay": 2000
+    },
+    "抓鬼领取双倍弹窗": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zhuagui/zhuagui_shuangbei.png"
+        ],
+        "roi": [
+            402,
+            263,
+            475,
+            196
+        ],
+        "pre_delay": 1000,
+        "next": [
+            "抓鬼关闭领取双倍弹窗-点击确定"
+        ]
+    },
+    "抓鬼关闭领取双倍弹窗-点击确定": {
+        "recognition": "OCR",
+        "expected": [
+            "确定"
+        ],
+        "roi": "抓鬼领取双倍弹窗",
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1500
     },
     "日常抓鬼-钟馗-捉鬼任务-开始": {
         "recognition": "OCR",
