@@ -124,7 +124,9 @@
         "recognition": "TemplateMatch",
         "template": [
             "richangdati/kejuxiangshi.png",
-            "richangdati/kejuxiangshi2.png"
+            "richangdati/kejuxiangshi2.png",
+            "richangdati/kejuxiangshi3.png",
+            "richangdati/kejuxiangshi4.png"
         ],
         "threshold": 0.8,
         "next": [

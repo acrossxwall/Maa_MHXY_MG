@@ -196,6 +196,7 @@ class AIAnswer(CustomRecognition):
                 except (KeyError, IndexError) as e:
                     return f"解析回复时出错: {e}"
             listAnswer= get_ai_answer(question,answer)
+            # logger.info(f"listAnswer为：{listAnswer}")
             # 点击box中心位置
             def clickBox(box):
                 new_context = context.clone()
@@ -205,16 +206,16 @@ class AIAnswer(CustomRecognition):
                 click_job = new_context.tasker.controller.post_click(center_x, center_y)
                 click_job.wait()  # 等待点击操作完成
                 time.sleep(2)
-            if listAnswer =="A|a":
+            if listAnswer =="A" or listAnswer == "a":
                 abox=[509,306,269,91]
                 clickBox(abox)
-            elif listAnswer =="B|b":
+            elif listAnswer =="B" or listAnswer == "b":
                 bbox=[825,304,270,95]
                 clickBox(bbox)
-            elif listAnswer =="C|c":
+            elif listAnswer =="C" or listAnswer == "c":
                 cbox= [506,408,268,88]
                 clickBox(cbox)
-            elif listAnswer =="D|d":
+            elif listAnswer =="D" or listAnswer == "d":
                 dbox= [831,404,265,96]
                 clickBox(dbox)
             else:
