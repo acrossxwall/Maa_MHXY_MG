@@ -1,0 +1,382 @@
+{
+    "chuangjianduiwu": {
+        "next": [
+            "队伍-打开界面"
+        ],
+        "interrupt": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "队伍-打开界面": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zonghe/chenghao.png",
+            "zonghe/jiahao.png"
+        ],
+        "roi": [
+            1206,
+            637,
+            66,
+            57
+        ],
+        "pre_delay": 200,
+        "action": "ClickKey",
+        "key": [
+            57,
+            48
+        ],
+        "next": [
+            "队伍-进入主界面"
+        ],
+        "interrupt": [
+            "队伍-打开界面-判断"
+        ]
+    },
+    "队伍-打开界面-判断": {
+        "inverse": true,
+        "recognition": "TemplateMatch",
+        "template": [
+            "duiwu/duiwu-zhujiemian.png"
+        ],
+        "roi": [
+            375,
+            5,
+            506,
+            65
+        ],
+        "pre_delay": 1000,
+        "action": "ClickKey",
+        "key": [
+            57,
+            48
+        ],
+        "post_delay": 1000
+    },
+    "队伍-进入主界面": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "duiwu/duiwu-zhujiemian.png"
+        ],
+        "roi": [
+            375,
+            5,
+            506,
+            65
+        ],
+        "next": [
+            "队伍-点击创建队伍"
+        ]
+    },
+    "队伍-点击创建队伍": {
+        "recognition": "OCR",
+        "expected": [
+            "创建队伍"
+        ],
+        "roi": [
+            148,
+            628,
+            188,
+            62
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "next": [
+            "队伍-目标已设置"
+        ],
+        "interrupt": [
+            "队伍-设置目标"
+        ]
+    },
+    "队伍-设置目标": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "duiwu/duiwu-mubiao.png"
+        ],
+        "roi": [
+            826,
+            89,
+            53,
+            49
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "队伍-目标-主界面"
+        ]
+    },
+    "队伍-目标-主界面": {
+        "recognition": "OCR",
+        "expected": "调整目标",
+        "roi": [
+            560,
+            6,
+            157,
+            51
+        ],
+        "next": [
+            "队伍-点击日常任务"
+        ]
+    },
+    "队伍-点击日常任务": {
+        "recognition": "OCR",
+        "expected": "日常任务",
+        "roi": [
+            259,
+            123,
+            261,
+            472
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "队伍-点击副本任务"
+        ]
+    },
+    "队伍-点击副本任务": {
+        "recognition": "OCR",
+        "expected": "副本任务",
+        "roi": [
+            259,
+            123,
+            261,
+            472
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "队伍-任务描述"
+        ]
+    },
+    "队伍-任务描述": {
+        "action": "Click",
+        "target": [
+            778,
+            422,
+            138,
+            36
+        ],
+        "post_delay": 1000,
+        "next": [
+            "队伍-任务描述-输入520"
+        ]
+    },
+    "队伍-任务描述-输入520": {
+        "action": "InputText",
+        "input_text": "520",
+        "post_delay": 2000,
+        "next": [
+            "队伍-输入框确定"
+        ]
+    },
+    "队伍-任务描述-输入320": {
+        "action": "InputText",
+        "input_text": "320",
+        "post_delay": 2000,
+        "next": [
+            "队伍-输入框确定"
+        ]
+    },
+    "队伍-输入框确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            1208,
+            0,
+            67,
+            65
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "next": [
+            "队伍-目标设置完成-点击确定"
+        ]
+    },
+    "队伍-目标设置完成-点击确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            554,
+            627,
+            172,
+            55
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 2000
+    },
+    "队伍-目标已设置": {
+        "recognition": "OCR",
+        "expected": "^(?!无$)[\u4e00-\u9fa5]+$",
+        "roi": [
+            478,
+            89,
+            180,
+            52
+        ],
+        "next": [
+            "队伍-人员已满"
+        ],
+        "interrupt": [
+            "队伍-点击自动匹配",
+            "队伍-点击一键喊话-当前"
+        ]
+    },
+    "队伍-点击自动匹配": {
+        "recognition": "OCR",
+        "expected": "自动匹配",
+        "roi": [
+            955,
+            84,
+            156,
+            60
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 2000
+    },
+    "队伍-点击一键喊话-当前": {
+        "recognition": "OCR",
+        "expected": [
+            "键喊话",
+            "一键喊话"
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "队伍-点击-当前频道"
+        ]
+    },
+    "队伍-点击-当前频道": {
+        "recognition": "OCR",
+        "expected": "当前频道",
+        "roi": [
+            927,
+            299,
+            171,
+            319
+        ],
+        "action": "Click",
+        "post_delay": 7000
+    },
+    "队伍-人员已满": {
+        "recognition": "OCR",
+        "expected": [
+            "大唐官府",
+            "方寸山",
+            "狮驼岭",
+            "普陀山",
+            "阴曹地府",
+            "龙宫",
+            "魔王寨",
+            "化生寺",
+            "月宫",
+            "女儿村",
+            "小雷音",
+            "花果山",
+            "须弥海",
+            "盘丝洞"
+        ],
+        "roi": [
+            957,
+            540,
+            120,
+            53
+        ],
+        "next": [
+            "队伍-人员已满-且未有暂离/离线"
+        ]
+    },
+    "队伍-人员已满-且未有暂离/离线": {
+        "inverse": true,
+        "recognition": "OCR",
+        "expected": [
+            "暂离",
+            "离线"
+        ],
+        "roi": [
+            341,
+            432,
+            757,
+            41
+        ],
+        "next": [
+            "队伍-退出组队界面"
+        ]
+    },
+    "队伍-退出组队界面": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "duiwu/duiwu-guanbi.png"
+        ],
+        "roi": [
+            1070,
+            12,
+            66,
+            59
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 0
+    },
+    "队伍-点击捉鬼任务": {
+        "recognition": "OCR",
+        "expected": "捉鬼任务",
+        "roi": [
+            259,
+            123,
+            261,
+            472
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "队伍-捉鬼任务-调整等级"
+        ]
+    },
+    "队伍-捉鬼任务-调整等级": {
+        "pre_delay": 1000,
+        "action": "MultiSwipe",
+        "swipes": [
+            {
+                "starting": 0,
+                "begin": [
+                    796,
+                    194,
+                    1,
+                    1
+                ],
+                "end": [
+                    803,
+                    516,
+                    1,
+                    1
+                ]
+            },
+            {
+                "starting": 1000,
+                "begin": [
+                    796,
+                    194,
+                    1,
+                    1
+                ],
+                "end": [
+                    803,
+                    516,
+                    1,
+                    1
+                ]
+            }
+        ],
+        "post_delay": 1000,
+        "next": [
+            "队伍-目标设置完成-点击确定"
+        ]
+    },
+    "队伍-目标-创建520": {}
+}
