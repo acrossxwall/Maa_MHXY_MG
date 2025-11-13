@@ -245,10 +245,10 @@
             "跳过剧情动画"
         ],
         "roi": [
-            1033,
-            254,
+            1029,
             240,
-            95
+            251,
+            110
         ],
         "pre_delay": 1000,
         "action": "Click",
@@ -282,7 +282,7 @@
             522,
             66
         ],
-        "pre_wait_freezes": 1,
+        "pre_wait_freezes": 10,
         "action": "Click",
         "target": [
             951,
