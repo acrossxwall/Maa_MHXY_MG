@@ -154,10 +154,11 @@
             62
         ],
         "pre_delay": 200,
-        "action": "Click"
+        "action": "Click",
+        "post_delay": 500
     },
     "任务栏切换为任务": {
-        "pre_delay": 200,
+        "pre_delay": 1500,
         "recognition": "ColorMatch",
         "upper": [
             177,
@@ -176,10 +177,11 @@
             35
         ],
         "count": 950,
-        "action": "Click"
+        "action": "Click",
+        "post_delay": 1500
     },
     "捉鬼-下滑任务栏": {
-        "post_delay": 200,
+        "post_delay": 1000,
         "action": "MultiSwipe",
         "swipes": [
             {
