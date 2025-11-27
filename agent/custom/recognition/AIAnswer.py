@@ -205,7 +205,7 @@ class AIAnswer(CustomRecognition):
                 center_x = box[0] + box[2] // 2
                 center_y = box[1] + box[3] // 2 
                 time.sleep(2)
-                click_job = new_context.tasker.controller.post_click(center_x, center_y)
+                click_job = new_context.tasker.controller.post_click(box[0], box[1])
                 click_job.wait()  # 等待点击操作完成
                 time.sleep(2)
             if listAnswer =="A" or listAnswer == "a":
