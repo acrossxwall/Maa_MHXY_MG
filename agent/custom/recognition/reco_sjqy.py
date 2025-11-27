@@ -315,12 +315,12 @@ class sjqy_tiku_V2(CustomRecognition):
             # logger.info("new_reco_detail为：{new_reco_detail}")
             # logger.info(new_reco_detail.box)
             # 点击答案
-            if new_reco_detail:
+            if new_reco_detail and new_reco_detail.hit:
                 box = new_reco_detail.box  # 假设box为(x, y, w, h)
                 center_x = box[0] + box[2] // 2
                 center_y = box[1] + box[3] // 2 
                 time.sleep(2)
-                click_job = context.tasker.controller.post_click(box[0], box[1])
+                click_job = context.tasker.controller.post_click(center_x, center_y)
                 click_job.wait()  # 等待点击操作完成
             
                 time.sleep(2)

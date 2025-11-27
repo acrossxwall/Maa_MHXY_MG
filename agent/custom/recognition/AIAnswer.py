@@ -118,7 +118,7 @@ class AIAnswer(CustomRecognition):
                                                                 }
                                                 }
                             )
-            if reco_detail_C:
+            if reco_detail_C and reco_detail_C.hit:
                 for res in reco_detail_C.all_results:
                     C =res.text
                     # logger.info(f"C:{C}")
@@ -133,7 +133,7 @@ class AIAnswer(CustomRecognition):
                                                                 }
                                                 }
                             )
-            if reco_detail_D:
+            if reco_detail_D and reco_detail_D.hit:
                 for res in reco_detail_D.all_results:
                     D =res.text
                     # logger.info(f"D:{D}")
@@ -205,7 +205,7 @@ class AIAnswer(CustomRecognition):
                 center_x = box[0] + box[2] // 2
                 center_y = box[1] + box[3] // 2 
                 time.sleep(2)
-                click_job = new_context.tasker.controller.post_click(box[0], box[1])
+                click_job = new_context.tasker.controller.post_click(center_x, center_y)
                 click_job.wait()  # 等待点击操作完成
                 time.sleep(2)
             if listAnswer =="A" or listAnswer == "a":
