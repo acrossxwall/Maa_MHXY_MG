@@ -468,6 +468,18 @@
                     }
                 }
             }
+        },
+        "Deepseek_apikey2": {
+            "field": "apikey",
+            "type": "string",
+            "default": "",
+            "pipeline_override": {
+                "活动-科举乡试-开始答题agent2": {
+                    "attach": {
+                        "apikey": "{apikey}"
+                    }
+                }
+            }
         }
     }
 }

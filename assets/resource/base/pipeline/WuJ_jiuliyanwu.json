@@ -164,6 +164,34 @@
         "action": "Click",
         "post_delay": 4000,
         "next": [
+            "九黎-进入帮派界面"
+        ]
+    },
+    "九黎-进入帮派界面": {
+        "recognition": "OCR",
+        "expected": "帮派地图",
+        "roi": [
+            96,
+            12,
+            135,
+            54
+        ],
+        "next": [
+            "九黎-帮派-向下移动"
+        ]
+    },
+    "九黎-帮派-向下移动": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "wujian/bcg/baicaoguI_weizhi1.png",
+            "wujian/bcg/baicaoguI_weizhi2.png",
+            "wujian/bcg/baicaoguI_weizhi3.png"
+        ],
+        "threshold": 0.9,
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
             "点击九黎演武使-图片"
         ]
     },
@@ -187,6 +215,7 @@
             "wujian/yanwushi4.png"
         ],
         "action": "Click",
+        "threshold": 0.9,
         "post_delay": 3000,
         "next": [
             "点击开始演武"

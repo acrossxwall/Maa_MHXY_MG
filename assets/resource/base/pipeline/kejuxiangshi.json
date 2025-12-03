@@ -223,5 +223,12 @@
     "活动-科举乡试-开始答题agent": {
         "recognition": "Custom",
         "custom_recognition": "AIAnswer"
+    },
+    "活动-科举乡试-开始答题agent2": {
+        "recognition": "Custom",
+        "custom_recognition": "AIAnswer",
+        "attach": {
+            "apikey": ""
+        }
     }
 }

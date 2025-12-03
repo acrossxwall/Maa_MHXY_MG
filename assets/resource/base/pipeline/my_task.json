@@ -178,6 +178,20 @@
         ],
         "pre_wait_freezes": 50000
     },
+    "战斗中-等待20秒": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zhandou/zidong.png",
+            "zhandou/quxiao.png"
+        ],
+        "roi": [
+            1175,
+            549,
+            103,
+            159
+        ],
+        "pre_wait_freezes": 20000
+    },
     "MyTask4": {
         "recognition": "Custom",
         "custom_recognition": "my_reco_222",
