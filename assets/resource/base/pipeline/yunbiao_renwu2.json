@@ -135,10 +135,26 @@
         "action": "Click",
         "post_wait_freezes": 6000,
         "next": [
-            "点击押送普通镖银(第一次)"
+            "[JumpBack]点击押送普通镖银(第一次)",
+            "[JumpBack]运镖中",
+            "[JumpBack]战斗中-等待20秒"
         ]
     },
+    "运镖中": {
+        "recognition": "OCR",
+        "expected": [
+            "距离运镖完成"
+        ],
+        "roi": [
+            150,
+            1,
+            195,
+            49
+        ],
+        "pre_delay": 10000
+    },
     "点击押送普通镖银(第一次)": {
+        "max_hit": 3,
         "recognition": "OCR",
         "expected": [
             "押送普通镖银"
@@ -150,8 +166,8 @@
             237
         ],
         "action": "Click",
+        "post_delay": 1000,
         "next": [
-            "运镖已完成三次",
             "点击押送普通镖_确定"
         ]
     },
@@ -167,89 +183,6 @@
             96
         ],
         "action": "Click",
-        "next": [
-            "点击押送普通镖银(第二次)",
-            "[JumpBack]反转运镖中",
-            "[JumpBack]战斗中-等待100秒"
-        ]
-    },
-    "反转运镖中": {
-        "recognition": "OCR",
-        "expected": [
-            "距离运镖完成"
-        ],
-        "roi": [
-            150,
-            1,
-            195,
-            49
-        ],
-        "pre_delay": 60000
-    },
-    "点击押送普通镖银(第二次)": {
-        "recognition": "OCR",
-        "expected": [
-            "押送普通镖银"
-        ],
-        "roi": [
-            933,
-            262,
-            307,
-            237
-        ],
-        "action": "Click",
-        "next": [
-            "运镖已完成三次",
-            "点击押送普通镖_确定(第二次)"
-        ]
-    },
-    "点击押送普通镖_确定(第二次)": {
-        "recognition": "OCR",
-        "expected": [
-            "确定"
-        ],
-        "roi": [
-            656,
-            367,
-            189,
-            96
-        ],
-        "action": "Click",
-        "next": [
-            "点击押送普通镖银(第三次)",
-            "[JumpBack]反转运镖中",
-            "[JumpBack]战斗中-等待100秒"
-        ]
-    },
-    "点击押送普通镖银(第三次)": {
-        "recognition": "OCR",
-        "expected": [
-            "押送普通镖银"
-        ],
-        "roi": [
-            933,
-            262,
-            307,
-            237
-        ],
-        "action": "Click",
-        "next": [
-            "运镖已完成三次",
-            "点击押送普通镖_确定(第三次)"
-        ]
-    },
-    "点击押送普通镖_确定(第三次)": {
-        "recognition": "OCR",
-        "expected": [
-            "确定"
-        ],
-        "roi": [
-            656,
-            367,
-            189,
-            96
-        ],
-        "action": "Click",
-        "post_delay": 150000
+        "post_delay": 1000
     }
 }

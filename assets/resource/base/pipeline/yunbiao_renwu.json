@@ -186,19 +186,6 @@
         ],
         "on_error": []
     },
-    "运镖中": {
-        "recognition": "OCR",
-        "expected": [
-            "距离运镖完成"
-        ],
-        "roi": [
-            150,
-            1,
-            195,
-            49
-        ],
-        "pre_delay": 10000
-    },
     "在活动中查看运镖任务是否完成": {
         "pre_wait_freezes": 1000,
         "action": "ClickKey",
