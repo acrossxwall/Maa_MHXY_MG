@@ -133,7 +133,24 @@
         "next": [
             "活动-召唤灵梦境-开始",
             "活动-召唤灵梦境-未到开始时间",
+            "活动-召唤灵梦境-结束",
             "[JumpBack]baotu_huodong_down"
+        ]
+    },
+    "活动-召唤灵梦境-结束": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "wanjian/zhl/zhaohuanling_jieshu1.png"
+        ],
+        "roi": [
+            313,
+            69,
+            840,
+            447
+        ],
+        "threshold": 0.9,
+        "next": [
+            "panduan_zhujiemian"
         ]
     },
     "活动-召唤灵梦境-未到开始时间": {
