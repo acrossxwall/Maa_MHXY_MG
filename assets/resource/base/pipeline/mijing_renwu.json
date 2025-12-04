@@ -304,6 +304,9 @@
             260,
             122,
             56
+        ],
+        "next": [
+            "秘境-点击离开"
         ]
     },
     "mijing_shibai": {
@@ -316,8 +319,22 @@
             275
         ],
         "next": [
-            "panduan_zhujiemian"
+            "秘境-点击离开",
+            "[JumpBack]panduan_zhujiemian"
         ]
+    },
+    "秘境-点击离开": {
+        "recognition": "OCR",
+        "expected": "离开",
+        "roi": [
+            1135,
+            185,
+            131,
+            283
+        ],
+        "pre_delay": 1500,
+        "action": "Click",
+        "post_delay": 2000
     },
     "tuichu_shibeijiemian": {
         "action": "ClickKey",
