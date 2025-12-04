@@ -188,15 +188,16 @@
         ]
     },
     "活动-科举乡试-结束-图片": {
+        "inverse": true,
         "recognition": "TemplateMatch",
         "template": [
             "richangdati/kejuxiangshi_yiwancheng.png"
         ],
         "roi": [
-            478,
-            129,
-            217,
-            79
+            481,
+            137,
+            47,
+            98
         ],
         "threshold": 0.9,
         "next": [
