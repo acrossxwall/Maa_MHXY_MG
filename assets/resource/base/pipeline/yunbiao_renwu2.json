@@ -135,7 +135,7 @@
         "action": "Click",
         "post_wait_freezes": 6000,
         "next": [
-            "[JumpBack]点击押送普通镖银(第一次)",
+            "[JumpBack]点击押送普通镖银(三次)",
             "[JumpBack]运镖中",
             "[JumpBack]战斗中-等待20秒"
         ]
@@ -153,7 +153,7 @@
         ],
         "pre_delay": 10000
     },
-    "点击押送普通镖银(第一次)": {
+    "点击押送普通镖银(三次)": {
         "max_hit": 3,
         "recognition": "OCR",
         "expected": [

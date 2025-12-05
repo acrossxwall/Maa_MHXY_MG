@@ -107,6 +107,12 @@
         ],
         "action": "Click",
         "post_delay": 3000,
+        "target_offset": [
+            0,
+            0,
+            -4,
+            -4
+        ],
         "next": [
             "钟馗-捉鬼任务-循环"
         ]
