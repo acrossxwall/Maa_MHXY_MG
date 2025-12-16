@@ -83,7 +83,8 @@
         "recognition": "TemplateMatch",
         "template": [
             "fuben/baixiao.png",
-            "fuben/baixiao2.png"
+            "fuben/baixiao2.png",
+            "fuben/baixiao3.png"
         ],
         "roi": [
             421,
