@@ -108,7 +108,7 @@
         "template": [
             "wujian/bcg/baicaogu_weikaishi.png"
         ],
-        "threshold": 0.9,
+        "threshold": 0.8,
         "roi": [
             316,
             76,
@@ -200,7 +200,7 @@
             "[JumpBack]百草谷-点击浇水",
             "[JumpBack]百草谷-点击除虫",
             "[JumpBack]百草谷-点击降雨",
-            "[JumpBack]战斗中-等待20秒"
+            "[JumpBack]战斗中-等待5秒"
         ]
     },
     "百草谷-神树消失": {
