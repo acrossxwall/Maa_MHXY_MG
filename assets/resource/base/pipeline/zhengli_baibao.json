@@ -359,7 +359,13 @@
             210,
             278
         ],
-        "action": "Click"
+        "action": "Click",
+        "target_offset": [
+            5,
+            5,
+            -10,
+            -5
+        ]
     },
     "使用秘境材料": {
         "recognition": "TemplateMatch",
